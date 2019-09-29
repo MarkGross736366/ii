@@ -1,0 +1,37 @@
+{% extends "wrapper.html" %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Invested</th>
+                        <th scope="col">Gains</th>
+                        <th scope="col">%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Livongo Health</th>
+                        <td>28</td>
+                        <td>-11</td>
+                        <td>-39</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Health Catalist</th>
+                        <td>26</td>
+                        <td>4</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="alert alert-warning">TOTAL</th>
+                        <td class="alert alert-warning">54</td>
+                        <td class="alert alert-warning">-7</td>
+                        <td class="alert alert-warning">-13</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        {% endblock %}

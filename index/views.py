@@ -9,6 +9,9 @@ def chart(request):
 def stock(request):
     return render(request, 'stock.html')
 
+def ipo(request):
+    return render(request, 'ipo.html')
+
 def bank(request):
     return render(request, 'bank.html')
 

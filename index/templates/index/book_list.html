@@ -1,0 +1,13 @@
+{% include "wrapper.html" %}
+
+{% for post in object_list %}
+<div class="container-fluid">
+    <div class="row">
+<div class="col-sm-12 col-12" align="center">
+<H1>{{post.author}} - "{{post.title}}"</H1><br>
+        </div>
+    </div>
+</div>
+{% endfor %} 
+
+{% include "js.html" %}

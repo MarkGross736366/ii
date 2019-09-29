@@ -1,0 +1,25 @@
+{% extends "wrapper.html" %}
+{% block content %}
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+<div id="tradingview_d6928" style="position: fixed; top: 83px; width: 100%; height: 80%;"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        new TradingView.widget({
+            "autosize": true,
+            "symbol": "NASDAQ:AAPL",
+            "timezone": "Etc/UTC",
+            "theme": "Light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "range": "60m",
+            "hide_side_toolbar": false,
+            "save_image": false,
+            "container_id": "tradingview_d6928"
+        });
+    </script>
+</div>
+<!-- TradingView Widget END -->
+{% endblock %}

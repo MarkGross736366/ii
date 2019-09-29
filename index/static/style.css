@@ -1,0 +1,10 @@
+html .cont,body .cont{background-color:black;user-select:none;top:0;left:0;right:0;bottom:0;width:290px;height:400px;border:1px solid;margin:auto;overflow:hidden}html .cont .view,body .cont .view{width:260px;height:40px;border:1px solid;margin:20px auto;line-height:20px;text-align:right;padding:10px;background-color:white;font-size:18px;font-weight:600}html .cont .keyboard,body .cont .keyboard{position:relative;width:100%;text-align:center}html .cont .keyboard .keyboard-row,body .cont .keyboard .keyboard-row{height:75px}html .container .keyboard .keyboard-row .keyboard-key,body .cont .keyboard .keyboard-row .keyboard-key{width:30px;background-color:black;color:white;font-weight:600;font-size:20px;cursor:pointer}html .cont .keyboard .keyboard-row .keyboard-key.soft,body .cont .keyboard .keyboard-row .keyboard-key.soft{background-color:black}
+/* body {
+  background: #1a8d8d;
+} */
+
+#mes {word-wrap: break-word;}
+
+* {font-size: 8px;}
+th {text-align: center;}
+td {text-align: center;}

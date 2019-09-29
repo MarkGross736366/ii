@@ -1,0 +1,100 @@
+{% extends "wrapper.html" %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col"><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Launch
+                                chart</button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-content">
+                                    <!-- TradingView Widget BEGIN -->
+                                    <div class="tradingview-widget-container">
+                                        <div id="tradingview_d5926" style="position: fixed; width: 100%; height: 100%;"></div>
+                                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                        <script type="text/javascript">
+                                            new TradingView.widget({
+                                                "autosize": true,
+                                                "symbol": "NASDAQ:AAPL",
+                                                "timezone": "Etc/UTC",
+                                                "theme": "Light",
+                                                "style": "1",
+                                                "locale": "en",
+                                                "toolbar_bg": "#f1f3f6",
+                                                "enable_publishing": false,
+                                                "hide_top_toolbar": true,
+                                                "range": "60m",
+                                                "allow_symbol_change": true,
+                                                "save_image": false,
+                                                "watchlist": [
+                                                    "NASDAQ:AAPL",
+                                                    "NYSE:GS",
+                                                    "NASDAQ:TSLA"
+                                                ],
+                                                "details": true,
+                                                "studies": [
+                                                    "MASimple@tv-basicstudies"
+                                                ],
+                                                "container_id": "tradingview_d5926"
+                                            });
+                                        </script>
+                                    </div>
+                                    <!-- TradingView Widget END -->
+                                </div>
+                            </div>
+                        </th>
+                        <th scope="col">P/E</th>
+                        <th scope="col">P/B</th>
+                        <th scope="col">EV/EBIT</th>
+                        <th scope="col">Debt/EBITDA</th>
+                        <th scope="col">L/A</th>
+                        <th scope="col">ROA</th>
+                        <th scope="col">ROE</th>
+                        <th scope="col">CAPM</th>
+                        <th scope="col">Beta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">AAPL</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">GS</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">TSLA</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        {% endblock %}

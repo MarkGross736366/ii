@@ -46,6 +46,19 @@
     <div class="row">
         <div id="left" class="col-12 col-sm-6 col-md-6 col-lg-7 col-xl-9" style="font-size: 20px" align="center"">
             <img src="/static/ii.jpg"width="100%"><br>
+            <div class="container-fluid">
+                <div class="row">
+                    <button class="btn btn-primary"
+                        style="font-size:20px; width:100%; height:50px; background-color:#417690;"
+                        onclick="Message()">Message<button>
+                            <div id="mes">
+                                {% for post in object_list %}
+                                <h1>{{post.text}}</h1>
+                                <h6>{{post.date|date:"h:m d.m.y"}}</h6>
+                                {% endfor %}
+                            </div>
+                </div>
+            </div>
             This site, and any contents or web pages attached, contains confidential and proprietary
             information that is intended for the exclusive use of authorized partners for the limited purpose
             of submitting and/or viewing information for designation of as part of the PAO Barbarian 2.0

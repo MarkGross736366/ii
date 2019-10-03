@@ -19,4 +19,4 @@ def book_list(request):
     return render(request, 'book_list.html')
 
 def message_list(request):
-    return render(request, 'index.html')
+    return render(request, 'message_list.html')

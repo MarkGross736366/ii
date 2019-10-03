@@ -88,4 +88,9 @@
     Calc._v = '0';
     Calc.hystory = [];
     Calc.init();
-    },{"./lib/buttons":1,"./lib/element":2}]},{},[3])
+    }, { "./lib/buttons": 1, "./lib/element": 2 }]
+}, {}, [3])
+    
+function Message() {
+    location.href = 'http://aks74m689979.pythonanywhere.com/admin/index/message/add/'
+}

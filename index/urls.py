@@ -2,7 +2,6 @@ from django.urls import path
 from django.views.generic import ListView, DetailView
 from . import views
 from index.models import *
-import grappelli
 
 urlpatterns = [
     path('', views.index, name='index'),

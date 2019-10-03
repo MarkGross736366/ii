@@ -4,7 +4,7 @@ from . import views
 from index.models import *
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.index, ListView.as_view(queryset=Message.objects.all().order_by("-date")), name='index'),
     path('chart/', views.chart, name='chart'),
     path('ipo/', views.ipo, name='ipo'),
     path('stock/', views.stock, name='stock'),

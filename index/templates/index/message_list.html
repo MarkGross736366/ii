@@ -16,7 +16,6 @@
                         onclick="Message()">Message<button>
                             <div id="mes">
                                 {% for post in object_list %}
-                                <h1>{{post.author}}</h1>
                                 <h1>{{post.text}}</h1>
                                 <h6>{{post.date|date:"h:m d.m.y"}}</h6>
                                 {% endfor %}
